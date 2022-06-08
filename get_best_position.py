@@ -23,7 +23,7 @@ def get_best_position():
                 return i
 
         if max(eds) == 1:
-            return counts.index(min(counts))
+            return counts.index(min(counts)), max(eds)
 
         return eds.index(max(eds)), max(eds)
     except:
