@@ -25,9 +25,9 @@ def get_best_position():
         if max(eds) == 1:
             return counts.index(min(counts))
 
-        return eds.index(max(eds))
+        return eds.index(max(eds)), max(eds)
     except:
-        return 1
+        return 0
 
 
 def get_ed_and_count(im, left, top, right, bottom):

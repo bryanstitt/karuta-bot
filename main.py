@@ -8,7 +8,8 @@ def drop():
     keyboard.send('enter')
     time.sleep(5)
     get_image()
-    match get_best_position():
+    index, ed = get_best_position()
+    match index:
         case 0:
             time.sleep(.25)
             keyboard.write('+:one:')
@@ -21,9 +22,12 @@ def drop():
         case 3:
             time.sleep(.25)
             keyboard.write('+:four:')
-    
+
     keyboard.send('enter')
-    keyboard.write('klu')
+
+    if ed == 4:
+        keyboard.write('klu')
+        keyboard.send('enter')
 
 while True:
     time.sleep(2)
