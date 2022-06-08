@@ -12,19 +12,18 @@ def drop():
         case 0:
             time.sleep(.25)
             keyboard.write('+:one:')
-            keyboard.send('enter')
         case 1:
             time.sleep(.25)
             keyboard.write('+:two:')
-            keyboard.send('enter')
         case 2:
             time.sleep(.25)
             keyboard.write('+:three:')
-            keyboard.send('enter')
         case 3:
             time.sleep(.25)
             keyboard.write('+:four:')
-            keyboard.send('enter')
+    
+    keyboard.send('enter')
+    keyboard.write('klu')
 
 while True:
     time.sleep(2)
