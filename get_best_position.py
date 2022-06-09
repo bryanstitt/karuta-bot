@@ -8,10 +8,10 @@ def get_best_position():
         im = ImageOps.grayscale(Image.open('images/card.png'))
         w, h = im.size
         im = ImageOps.invert(im)
-        l_count, l_ed = get_ed_and_count(im, 153, 370, w - 890, h - 35)
+        l_count, l_ed = get_ed_and_count(im, 157, 370, w - 882, h - 35)
         ml_count, ml_ed = get_ed_and_count(im, 430, 370, w - 617, h - 35)
-        mr_count, mr_ed = get_ed_and_count(im, 700, 370, w - 342, h - 35)
-        r_count, r_ed = get_ed_and_count(im, 980, 370, w - 65, h - 35)
+        mr_count, mr_ed = get_ed_and_count(im, 700, 370, w - 338, h - 35)
+        r_count, r_ed = get_ed_and_count(im, 980, 370, w - 63, h - 35)
         
         eds = [l_ed, ml_ed, mr_ed, r_ed]
         counts = [l_count, ml_count, mr_count, r_count]
