@@ -20,7 +20,7 @@ def get_best_position():
             if count == 1:
                 continue
             if count < 100:
-                return i
+                return i, 4
 
         if max(eds) == 1:
             return counts.index(min(counts)), max(eds)
