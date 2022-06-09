@@ -9,7 +9,7 @@ def drop():
     time.sleep(8.108)
     get_image()
     index, ed = get_best_position()
-    time.sleep(5)
+    time.sleep(0.5)
 
     match index:
         case 0:
@@ -23,7 +23,7 @@ def drop():
 
     keyboard.send('enter')
     time.sleep(1)
-    
+
     if ed == 4:
         keyboard.write('klu')
         keyboard.send('enter')
