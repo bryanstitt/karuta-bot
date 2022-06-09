@@ -22,7 +22,7 @@ def drop():
             keyboard.write('+:four:')
 
     keyboard.send('enter')
-    time.sleep(1)
+    time.sleep(3)
 
     if ed == 4:
         keyboard.write('klu')
