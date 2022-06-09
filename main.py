@@ -9,7 +9,7 @@ def drop():
     time.sleep(8.108)
     get_image()
     index, ed = get_best_position()
-    time.sleep(0.5)
+    time.sleep(0.1)
 
     match index:
         case 0:
